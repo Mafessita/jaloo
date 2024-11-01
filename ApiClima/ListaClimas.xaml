@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ApiClima.ListaClimas"
+             Title="Climas Guardados">
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Climas Guardados" FontSize="24" HorizontalOptions="Center" />
+
+            <ListView x:Name="climaListView" ItemSelected="OnClimaSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding name}" Detail="{Binding temp}" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

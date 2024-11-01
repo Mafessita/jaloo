@@ -1,0 +1,74 @@
+﻿<ContentPage
+    x:Class="ApiClima.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundColor="#f0f0f0">
+<ScrollView>
+    <StackLayout Padding="20" Spacing="20">
+            <Label
+            FontAttributes="Bold"
+            FontSize="32"
+            HorizontalOptions="Center"
+            Text="Clima"
+            TextColor="#333" />
+
+            <Entry
+            x:Name="cityEntry"
+            Margin="0,0,0,10"
+            BackgroundColor="#fff"
+            FontSize="18"
+            Placeholder="Enter city name"
+            TextColor="#333" />
+
+        <Button
+            BackgroundColor="Black"
+            Clicked="OnSearchButtonClicked"
+            FontSize="18"
+            Text="Obtener CLima"
+            TextColor="White" />
+        <Button Clicked="Insertar" Text="Agregar" />
+
+        <Label
+            x:Name="cityLabel"
+            FontAttributes="Bold"
+            FontSize="24"
+            HorizontalOptions="Center"
+            
+            TextColor="#333" />
+
+        <Image
+            x:Name="iconImage"
+            HeightRequest="100"
+            HorizontalOptions="Center"
+            WidthRequest="100" />
+
+        <Label
+            x:Name="temperatureLabel"
+            FontAttributes="Bold"
+            FontSize="24"
+            HorizontalOptions="Center"
+            TextColor="#FF5722" />
+
+        <Label
+            x:Name="weatherLabel"
+            FontSize="18"
+            HorizontalOptions="Center"
+            TextColor="#333" />
+
+
+        <Label
+            x:Name="localtimeLabel"
+            Margin="0,20,0,10"
+            FontAttributes="Bold"
+            FontSize="Medium"
+            HorizontalOptions="Center"
+            TextColor="Black" />
+
+            <Button Text="Ver Climas Guardados" Clicked="OnViewClimasButtonClicked" />
+
+        </StackLayout>
+    
+
+    </ScrollView>
+
+</ContentPage>
